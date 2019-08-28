@@ -60,7 +60,7 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #f7b623;
+    background: #423d32;
     color: #fff;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
@@ -78,7 +78,7 @@ a, a:hover, a:focus {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #f7b623;
+    border-bottom: 1px solid #423d32;
 }
 
 #sidebar ul p {
@@ -97,7 +97,7 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #f7b623;
+    color: #423d32;
     background: #fff;
 }
 
@@ -122,7 +122,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #f7b623;
+    background: #423d32;
 }
 
 ul.CTAs {
@@ -143,7 +143,7 @@ a.download {
 }
 
 a.article, a.article:hover {
-    background: #f7b623 !important;
+    background: #423d32 !important;
     color: #fff !important;
 }
 

@@ -24,52 +24,52 @@
 </head>
 
 <body>
-
+       
     <div class="wrapper">
-       <!-- Sidebar Holder -->
-       <nav id="sidebar">
-            <div class="sidebar-header text-center" >
-                <img src="icon_logo.png"  alt="Bee start" width="70px" height="70px">   
-                <p class="font-white">Design Patterns</p>
-            </div>
-
-            <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Desenvolvimento</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="index.html#nomenclaturas">Nomenclaturas</a>
-                        </li>
-                        <li>
-                            <a href="estrutura-projeto.html">Estrutura Projeto</a>
-                        </li>
-                        <li>
-                            <a href="#">Em construção</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">View</a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+                <div class="sidebar-header text-center" >
+                    <img src="icon_logo.png"  alt="Bee start" width="70px" height="70px">   
+                    <p class="font-white">Design Patterns</p>
+                </div>
+    
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Desenvolvimento</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li>
-                                <a href="view.html">Tabela de máscara,tipo e limite</a>
+                                <a href="index.html#nomenclaturas">Nomenclaturas</a>
                             </li>
                             <li>
-                                <a href="view-padroes.html">Padrões</a>
+                                <a href="estrutura-projeto.html">Estrutura Projeto</a>
                             </li>
                             <li>
-                                <a href="view.html">Em construção</a>
+                                <a href="#">Em construção</a>
                             </li>
                         </ul>
                     </li>
-                <li>
-                <li>
-                    <a href="design.html">Design</a>
-                </li>
-                <li>
-                </li>
-            </ul>
-        </nav>
+                    <li>
+                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">View</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenu">
+                                <li>
+                                    <a href="view.html">Tabela de máscara,tipo e limite</a>
+                                </li>
+                                <li>
+                                    <a href="view-padroes.html">Padrões</a>
+                                </li>
+                                <li>
+                                    <a href="view.html">Em construção</a>
+                                </li>
+                            </ul>
+                        </li>
+                    <li>
+                    <li>
+                        <a href="design.html">Design</a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </nav>
 
         <!-- Page Content Holder -->
         <div id="content">
@@ -105,72 +105,83 @@
                 </div>
             </nav>
             
-            <h2 id="nomenclaturas">Nomenclaturas</h2>
-            <h5>Funções</h5>
-            <p>O nome da função deve ser escrito em inglês com CammelCase</p>
-            <pre>
-                    <code class="language-javascript line-numbers language-markup">
-                        function getNameById(userId)
-                  </code>
-            </pre>
+            <h2 id="tabela">View</h2>
+            <h5>Tabela de padrões</h5>
+           
+
+            <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">Campo</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Limite</th>
+                        <th scope="col">Máscara</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>nome</td>
+                        <td>alfanumerico</td>
+                        <td>20</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>e-mail</td>
+                        <td>alfanumerico</td>
+                        <td>55</td>
+                        <td>email@domain.com</td>
+                      </tr>
+                      <tr>
+                        <td>telefone</td>
+                        <td>alfanumerico</td>
+                        <td>20</td>
+                        <td>(31)3498-2015</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
  
+
             <div class="mt-4"/>
-            <h5>Variável</h5>
-            <p>O nome da variável deve ser ser escrito em inglês com CammelCase</p>
+            <h5>Prototipo</h5>
+            <p>No prototipo os designers devem colocar as seguintes informações:</p>
+            <p>Limite de caracteres:  Campo de formulário ter o limite de caracteres em comentários.
+            </br>  Máscaras: Ter a máscara entre as chaves em comentários.
+            </p>
+
             <pre>
                     <code class="language-javascript line-numbers language-markup">
-                        let userName = "Goku";
-                  </code>
+                          Digite seu telefone {Limite 20 caracteres (31)-123123}
+                          Digite seu nome {20 texto}
+                    </code>
             </pre>
 
-            
+
+
             <div class="mt-4"/>
-            <h5>Chave Primária</h5>
-            <p>O nome da chave primária deve ser ser escrito em inglês todo em minúsculo</p>
+            <h5>Redux</h5>
+            <p>Utilizar o redux?  </p>
+
+
+            <div class="mt-4"/>
+            <h5> Parâmetros</h5>
+            <p>Utilizar o objeto como parâmetro quando houver muitos parâmetros</p>
             <pre>
                     <code class="language-javascript line-numbers language-markup">
-                        uid
-                  </code>
+                          function registerUser(user){
+                              console.log(user.name);
+                          }
+                    </code>
             </pre>
+   
 
             <div class="mt-4"/>
-            <h5>Chave estrangeira</h5>
-            <p>O nome da chave estrangeira deve ser ser escrito em inglês com CammelCase</p>
-            <pre>
-                    <code class="language-javascript line-numbers language-markup">
-                        clientId
-                  </code>
-            </pre>
+            <h5> VS Code</h5>
+            <p>Formatação automatica do VS Code</p>
+     
 
-            <div class="mt-4"/>
-            <h5>Constante Global</h5>
-            <p>O nome da constante global deve ser ser escrito em inglês, todo em maiúsculo e separado por underline </p>
-            <pre>
-                    <code class="language-javascript line-numbers language-markup">
-                        CONSTANT_NAME = "CONSTANT_GLOBAL" 
-                  </code>
-            </pre>
-
-            <div class="mt-4"/>
-            <h5>Constante Local</h5>
-            <p>O nome da constante local deve ser ser escrito em inglês com CammelCase </p>
-            <pre>
-                    <code class="language-javascript line-numbers language-markup">
-                        constantName = []; 
-                  </code>
-            </pre>
-
-
-            <div class="mt-4"/>
-            <h5>Rotas URL</h5>
-            <p>As rotas devem ser escritas em português e minúsculo separado por hífen. </p>
-            <pre>
-                <code class="language-javascript line-numbers language-markup">
-                        www.beestart.com.br/verificar-usuario
-                  </code>
-            </pre>
-
-        </div>
+           
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->

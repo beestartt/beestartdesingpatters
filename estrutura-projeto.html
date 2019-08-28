@@ -24,52 +24,52 @@
 </head>
 
 <body>
-
+       
     <div class="wrapper">
-       <!-- Sidebar Holder -->
-       <nav id="sidebar">
-            <div class="sidebar-header text-center" >
-                <img src="icon_logo.png"  alt="Bee start" width="70px" height="70px">   
-                <p class="font-white">Design Patterns</p>
-            </div>
-
-            <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Desenvolvimento</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="index.html#nomenclaturas">Nomenclaturas</a>
-                        </li>
-                        <li>
-                            <a href="estrutura-projeto.html">Estrutura Projeto</a>
-                        </li>
-                        <li>
-                            <a href="#">Em construção</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">View</a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+                <div class="sidebar-header text-center" >
+                    <img src="icon_logo.png"  alt="Bee start" width="70px" height="70px">   
+                    <p class="font-white">Design Patterns</p>
+                </div>
+    
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Desenvolvimento</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li>
-                                <a href="view.html">Tabela de máscara,tipo e limite</a>
+                                <a href="index.html#nomenclaturas">Nomenclaturas</a>
                             </li>
                             <li>
-                                <a href="view-padroes.html">Padrões</a>
+                                <a href="estrutura-projeto.html">Estrutura Projeto</a>
                             </li>
                             <li>
-                                <a href="view.html">Em construção</a>
+                                <a href="#">Em construção</a>
                             </li>
                         </ul>
                     </li>
-                <li>
-                <li>
-                    <a href="design.html">Design</a>
-                </li>
-                <li>
-                </li>
-            </ul>
-        </nav>
+                    <li>
+                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">View</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenu">
+                                <li>
+                                    <a href="view.html">Tabela de máscara,tipo e limite</a>
+                                </li>
+                                <li>
+                                    <a href="view-padroes.html">Padrões</a>
+                                </li>
+                                <li>
+                                    <a href="view.html">Em construção</a>
+                                </li>
+                            </ul>
+                        </li>
+                    <li>
+                    <li>
+                        <a href="design.html">Design</a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </nav>
 
         <!-- Page Content Holder -->
         <div id="content">
@@ -105,72 +105,94 @@
                 </div>
             </nav>
             
-            <h2 id="nomenclaturas">Nomenclaturas</h2>
-            <h5>Funções</h5>
-            <p>O nome da função deve ser escrito em inglês com CammelCase</p>
-            <pre>
-                    <code class="language-javascript line-numbers language-markup">
-                        function getNameById(userId)
-                  </code>
-            </pre>
+            <h2 id="nomenclaturas">Estrutura do projeto</h2>
+            <h5>Constantes númericas</h5>
+            <p>Todas as constantes númericas deve ser decladas no escopo global.</p>
  
             <div class="mt-4"/>
-            <h5>Variável</h5>
-            <p>O nome da variável deve ser ser escrito em inglês com CammelCase</p>
-            <pre>
-                    <code class="language-javascript line-numbers language-markup">
-                        let userName = "Goku";
-                  </code>
-            </pre>
-
-            
+            <h5>Estrutura do projeto WEB/PWA/API</h5>
+            <p>Deve seguir a estrutura do projeto Petrotec</p>
+               
             <div class="mt-4"/>
-            <h5>Chave Primária</h5>
-            <p>O nome da chave primária deve ser ser escrito em inglês todo em minúsculo</p>
-            <pre>
-                    <code class="language-javascript line-numbers language-markup">
-                        uid
-                  </code>
-            </pre>
+            <h5>Estrutura do projeto APP</h5>
+            <p>Deve seguir a estrutura do projeto tentino</p>
 
             <div class="mt-4"/>
-            <h5>Chave estrangeira</h5>
-            <p>O nome da chave estrangeira deve ser ser escrito em inglês com CammelCase</p>
-            <pre>
-                    <code class="language-javascript line-numbers language-markup">
-                        clientId
-                  </code>
-            </pre>
-
-            <div class="mt-4"/>
-            <h5>Constante Global</h5>
-            <p>O nome da constante global deve ser ser escrito em inglês, todo em maiúsculo e separado por underline </p>
-            <pre>
-                    <code class="language-javascript line-numbers language-markup">
-                        CONSTANT_NAME = "CONSTANT_GLOBAL" 
-                  </code>
-            </pre>
-
-            <div class="mt-4"/>
-            <h5>Constante Local</h5>
-            <p>O nome da constante local deve ser ser escrito em inglês com CammelCase </p>
-            <pre>
-                    <code class="language-javascript line-numbers language-markup">
-                        constantName = []; 
-                  </code>
-            </pre>
-
-
-            <div class="mt-4"/>
-            <h5>Rotas URL</h5>
-            <p>As rotas devem ser escritas em português e minúsculo separado por hífen. </p>
+            <h5>Rotas de api no express</h5>
+            <p>As rotas no express devem serguir a seguinte estrutura:</p>
             <pre>
                 <code class="language-javascript line-numbers language-markup">
-                        www.beestart.com.br/verificar-usuario
-                  </code>
+                            /clients/client/{id}
+                    </code>
             </pre>
 
-        </div>
+            <div class="mt-4"/>
+            <h5>Lazyload</h5>
+            <p>Exemplo do lazyload encontra-se no projeto Petrotec. </p>
+
+            <div class="mt-4"/>
+            <h5>Redux</h5>
+            <p>Utilizar o redux?  </p>
+
+            <div class="mt-4"/>
+            <h5>Notação de Fragment</h5>
+            <p> Remover a escrita  "Fragment" do código, conforme o exemplo abaixo: </p>
+
+                  <pre>
+                    <code class="language-javascript line-numbers language-markup">
+                    
+                      Sem utilizar o padrão:  </br> 
+                      return (){</br> &lt;Fragment&gt; </br>
+                      &lt;h1&gt;App React</h1> </br>
+                      &lt;h2&gt;Vamos começar!&lt;/h2&gt; </br>
+                      &lt;/Fragment&gt;
+                      }</br></br>
+
+                      Utilizando o padrão: </br>
+                      return (){</br>&lt;&gt; </br>
+                      &lt;h1&gt;App React&lt;/h1&gt; </br>
+                      &lt;h2&gt;Vamos começar!&lt;/h2&gt; </br>
+                     &lt;/&gt;}
+                  </code>
+                  </pre>
+            
+
+
+            <div class="mt-4"/>
+            <h5> Construtor</h5>
+            <p> Não utilizar construtor</p>
+            <pre>
+                    <code class="language-javascript line-numbers language-markup">
+                                Sem utilizar o padrão:  </br> 
+                                constructor(props: Props){</br>
+                                super(props); </br>
+                                this.state = { email: "" } </br>
+                                }
+                                </br></br>
+
+                                Utilizando o padrão: </br>
+                                state = { email: "" } </br>
+                            </code>
+            </pre>
+
+            <div class="mt-4"/>
+            <h5> Parâmetros</h5>
+            <p>Utilizar o objeto como parâmetro quando houver muitos parâmetros</p>
+            <pre>
+                    <code class="language-javascript line-numbers language-markup">
+                          function registerUser(user){
+                              console.log(user.name);
+                          }
+                    </code>
+            </pre>
+   
+
+            <div class="mt-4"/>
+            <h5> VS Code</h5>
+            <p>Formatação automatica do VS Code</p>
+     
+
+           
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
